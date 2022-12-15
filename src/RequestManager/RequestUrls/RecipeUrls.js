@@ -7,7 +7,7 @@ const UPDATE_REC= URL+"/UpdateRecipe"
 const DELET_REC= URL+"/DeleteRecipe"
 const SHOW_ALL_REC= URL+"/ViewAllRecipe"
 const COUNT_REC=URL+"/CountRecipe"
-
+const ADD_ING="/IngApi/CreateIngredient"
 
 export {
    REC_CREATE_URL,
@@ -15,5 +15,6 @@ export {
    UPDATE_REC,
    DELET_REC,
    SHOW_ALL_REC,
-   COUNT_REC
+   COUNT_REC,
+   ADD_ING
 }

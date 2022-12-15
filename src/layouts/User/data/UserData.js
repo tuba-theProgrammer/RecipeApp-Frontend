@@ -2,11 +2,14 @@
 // Material Dashboard 2 React components
 
 import MDTypography from "components/MDTypography";
+import {SERVER_URL} from '../../../RequestManager/RequestUrls/generalUrls'
+import {SendRequestToBackend} from '../../../RequestManager/Request-manager'
+import {DISPLAY_USERS} from '../../../RequestManager/RequestUrls/UsersUrls'
+import { useEffect, useState } from "react";
 
 
-export default function data() {
+export default function Data() {
   
-
   return {
     columns: [
       { Header: "Name", accessor: "name", width: "45%", align: "left" },
@@ -16,7 +19,9 @@ export default function data() {
     ],
 
     rows: [
-      {
+      
+     
+       {
         
         name: (
           <MDTypography component="a" href="#" variant="caption" color="black" fontWeight="medium" fontSize='1rem'>
